@@ -11,10 +11,10 @@
                     size="2rem" 
                     src="{path: 'oProceduresModel>mime', formatter: '.Formatter.doctypeicon' }" 
                     class="sapUiSmallMarginBegin sapUiSmallMarginTopBottom" />
-                <VBox class="sapUiSmallMarginBegin sapUiSmallMarginTopBottom" >
+                <VBox class="sapUiSmallMarginBegin" >
 				    <Link text="{oProceduresModel>name}" href="{oProceduresModel>url}" target="_blank" class="requirementText"/>
                     <Label text="{path: 'oProceduresModel>description',formatter: '.Formatter.previewText'}"/>
-                    <Text text="{path: 'oProceduresModel>expirydate', formatter: '.Formatter.formatExpiryDate'}" class="sapUiTinyMarginTop"/>
+                    <Text text="{path: 'oProceduresModel>expirydate', formatter: '.Formatter.formatExpiryDate'}"/>
                 </VBox>
             </HBox>
         </CustomListItem>
