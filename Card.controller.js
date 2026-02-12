@@ -47,7 +47,7 @@ sap.ui.define([
 		},
 
 		_loadData: function () {
-			debugger;
+			// debugger;
 			var params = new URLSearchParams(window.location.search);
 			var title = params.get("title");
 			title = title ? title.split("/")[0] : "";
@@ -55,7 +55,7 @@ sap.ui.define([
 			var oView = this.getView();
 			if (title.includes('%')) title = this.fullyDecode(title);
 
-			console.log("Received Title:", title);
+			// console.log("Received Title:", title);
 			oView.setBusy(true);
 			this.getOwnerComponent().getModel().read("/FetchOTFiles", {
 				urlParameters: {
@@ -63,7 +63,7 @@ sap.ui.define([
 					"keyword": title
 				},
 				success: function (oData) {
-					debugger;
+					// debugger;
 					var aFormData = oData.results || [];
 					var oModel = new sap.ui.model.json.JSONModel(aFormData);
 					this.getView().setModel(oModel, "oProceduresModel");
