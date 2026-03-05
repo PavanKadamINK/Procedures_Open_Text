@@ -5,7 +5,7 @@ sap.ui.define([
     return {
 
         doctypeicon: function (mime) {
-            if (!mime) return "";
+            // if (!mime) return "";
             if (mime === "application/pdf") {
                 return "sap-icon://pdf-attachment";
             }
